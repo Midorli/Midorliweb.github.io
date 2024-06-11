@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.logo{
+    position:absolute;
+    left: 20px;
+}
+.box{
+    display: flex;
+    justify-content:center;
+    align-items:center ;
+    position: relative;
+}
+.header{
+    width: 100%;
+    text-align:right;
+    letter-spacing: 25px;
+    margin: 80px 25px;
+}
+.header a{
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: rgb(0, 0, 0);
+    text-decoration: none
+}
+.header .active{
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(78, 210, 254);
+}
+.header a:hover{
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(78, 210, 254);
+}
+.box1{
+    width:1200px;
+    height: 340px;
+    position:absolute;
+    top: 200px;
+}
+.about-img{
+    float: left;
+    width: 420px;
+    height: 340px;
+}
+.about-text{
+    float: right;
+    width: 750px;
+    margin: 63px 0;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.2);
+}
+.about-text>h3{
+    margin: 10px 10px;
+    font-size: 20px;
+}
+.about-text>p{
+    margin: 20px 20px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+.photo{
+    	/* 弹性布局 让页面元素垂直+水平居中 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* 让页面始终占屏幕总高 */
+	height: 100vh;
+}
+.photo>h3{
+    position:absolute;
+    top: 510px;
+    left:240px;
+    font-size: 30px;
+}
+.photo>h3:hover{
+    font-size: 35px;
+    cursor: pointer;
+    color: aqua;
+}
+.swiper {
+	/* 相对定位 */
+	position:absolute;
+    top: 550px;
+    left: 140px;
+	width: 1183px;
+	height: 680px;
+	overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 80px;
+}
+input {
+	display: none;
+}
+label {
+	position: absolute;
+	bottom: 30px;
+	width: 30px;
+	height: 30px;
+	border: 5px solid #b7fbff;
+	border-radius: 50%;
+	background-color: #b7fbff;
+}
+label[for="btn1"] {
+	left: 40%;
+}
+label[for="btn2"] {
+	left: 44%;
+}
+label[for="btn3"] {
+	left: 49%;
+}
+label[for="btn4"] {
+	left: 54%;
+}
+label[for="btn5"] {
+	left: 59%;
+}
+ul {
+	/* 让li水平排列 */
+	display: flex;
+	/* 自动计算宽度 */
+	width: calc(1183px*5);
+	/* 过渡时间 */
+	transition: all 0.5s;
+}
+li {
+	list-style-type: none;
+}
+#btn1:checked ~ ul {
+	margin-left: 0;
+}
+#btn2:checked ~ ul {
+	margin-left: -1183px;
+}
+#btn3:checked ~ ul {
+	margin-left: calc(-1183px * 2);
+}
+#btn4:checked ~ ul {
+	margin-left: calc(-1183px * 3);
+}
+#btn5:checked ~ ul {
+	margin-left: calc(-1183px * 4);
+}
+#btn1:checked ~ label[for="btn1"] {
+	background-color: rgb(0, 242, 255);
+}
+#btn2:checked ~ label[for="btn2"] {
+	background-color: rgb(0, 242, 255);
+}
+#btn3:checked ~ label[for="btn3"] {
+	background-color: rgb(0, 242, 255);;
+}
+#btn4:checked ~ label[for="btn4"] {
+	background-color: rgb(0, 242, 255);
+}
+#btn5:checked ~ label[for="btn5"] {
+	background-color: rgb(0, 242, 255);
+}
+.video{
+    position:absolute;
+    top:1300px;
+    left: 120px;
+    justify-content: center;
+    align-items: center;
+    width: 1400px;
+    height: 900px;
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    background: rgb(255, 255, 255);
+}
+.video>h3:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: aqua;
+}
+.box-video img{
+    float: left;
+    width: 280px;
+    height:230px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.box-video img:nth-child(4n+4){
+    margin-right: 0;
+}
