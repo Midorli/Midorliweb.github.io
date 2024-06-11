@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.logo{
+    position:absolute;
+    left: 20px;
+}
+.main_box{
+    display: flex;
+    justify-content:center;
+    align-items:center ;
+    position: relative;
+}
+.header{
+    width: 100%;
+    text-align:right;
+    letter-spacing: 25px;
+    margin: 80px 25px;
+}
+.header a{
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: rgb(0, 0, 0);
+    text-decoration: none
+}
+.header .active{
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(0, 191, 255);
+}
+.header a:hover{
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(78, 210, 254);
+}
+
+
+
+
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding:0;
+    margin:0;
+
+  }
+.bg{
+    width: 100%;
+    top: 100px; left: 0;
+    min-height: 100vh;
+    
+    position: absolute;
+    z-index: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.profileCard{
+    z-index: 0;
+}
+.logo1{
+
+    margin: auto;
+    margin-top: -100px;
+    width: 200px;
+    height: 200px;
+    color: aqua;
+}
+.logo2{
+    width: 180px;
+    height: 180px;
+    margin: 5px 5px;
+    border-radius: 50%;
+    border: 2px solid rgba(216, 214, 214, 0.8);
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.9);
+    transition: all 1s;
+}
+
+.logo2:hover{
+    transform: rotate(360deg);
+    box-shadow: 0px 0px 50px aqua;
+
+    transition: all 1s;
+}
+
+.name{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(164, 246, 246);
+    font-weight: 500;
+    text-shadow: 0px 0px 20px white;
+    transition: all 0.5s;
+    letter-spacing: 2px;
+}
+.name:hover{
+    text-shadow: 0px 0px 30px rgb(0, 157, 255);
+
+    transition: all 0.1s;
+}
+
+.slogan{
+    margin: auto;
+    width: 600px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(44, 44, 44, 0.8);
+    text-shadow: 0px 0px 22px #4f4e4e;
+    box-shadow: 0px 0px 22px #393939;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.slogan:hover{
+    background-color: rgba(224, 224, 224, 0.4);
+    box-shadow: 0px 0px 25px #00ddff;
+    transition: all 0.5s;
+}
+
+.slogan2{
+    text-align: center;
+    color:aqua;
+    font-size: 30px;
+    max-width: 500px;
+    letter-spacing: 8px;
+}
+
+.buttons{
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    height: 100px;
+    display: flex;
+}
+.button1{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 50px;
+    width: 240px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 5px;
+    border: 1px solid rgba(82, 82, 82, 0.4);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(0, 166, 255);
+    font-size: 20px;
+    transition: all 0.5s;
+}
+.button1:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    
+    color: #00eeff;
+    box-shadow: 0px 0px 12px #006aff;
+    transition: all 0.5s;
+
+}
+.button2{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 50px;
+    width: 240px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(82, 82, 82, 0.4);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.5s;
+}
+.button2 a{
+    color: rgb(0, 119, 255);
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+.button2 ul{
+    display: none;
+    backdrop-filter: blur(2px);
+    width: 820px;
+    height: 400px;
+    border-radius: 20px;
+    position: absolute;
+    top:640px;
+    left: 355px;
+
+}
+.button2:hover ul{
+    display: block;
+}
+.button2 ul:hover ul{
+    display: block;
+}
+.messagebox{
+    width: 100%;
+    position: relative;
+    display:inline-block;
+    text-align:left;
+    color: #00eeff;
+    margin: 10px 40px;
+    letter-spacing: 8px;
+    padding: 30px;
+    border: 1px solid rgba(82, 82, 82, 0.4);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+}
+.contact a:hover{
+    cursor: pointer;
+    font-size: 25px;
+    color: #006aff;
+}
+.h2{
+    margin: 20px 0px;
+}
