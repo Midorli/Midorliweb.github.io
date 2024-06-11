@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.logo{
+    position:absolute;
+    left: 20px;
+}
+.main_box{
+    display: flex;
+    justify-content:center;
+    align-items:center ;
+    position: relative;
+}
+.header{
+    width: 100%;
+    text-align:right;
+    letter-spacing: 25px;
+    margin: 80px 25px;
+}
+.header a{
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: rgb(0, 0, 0);
+    text-decoration: none
+}
+.header .active{
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(0, 191, 255);
+}
+.header a:hover{
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(78, 210, 254);
+}
+.input,textarea{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.Message_area{
+    position:absolute;
+    top:200px;
+    left: 10%;
+    margin: 10px auto;
+    width: 80%;
+    height: 700px;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.3),0 0 15px rgba(255, 255,255, 0.3) inset;
+    background: rgba(255, 255,255, 0.1);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+.Message_area>.name{
+    backdrop-filter: blur(5px);
+    width: 20%;
+    height:50px;
+}
+.Message_area>.name>input{
+    width: 100%;
+    height: 50px;
+    border-radius:50px ;
+    box-shadow: 0 0 10px rgba(184, 184, 184, 0.3);
+    text-align: center;
+    font-size: 20px;
+}
+.Message_area>.name>input::-webkit-input-placeholder{
+    color: rgb(128, 214, 214);
+}
+
+
+.Message_area>.tiltle{
+    width: 20%;
+    height:50px;
+}
+.Message_area>.tiltle>input{
+    width: 100%;
+    height: 60px;
+    border-radius:50px ;
+    box-shadow: 0 0 10px rgba(194, 193, 193, 0.3);
+    text-align: center;
+    font-size: 20px;
+}
+.Message_area>.tiltle>input::-webkit-input-placeholder{
+    color: rgb(72, 175, 175);
+}
+.Message_area>.con{
+    width:60%;
+    height: 300px;
+    backdrop-filter: blur(50px);
+}
+.Message_area>.con>textarea{
+    width: 100%;
+    height:300px;
+    resize: none;
+    color: rgb(0, 179, 255);
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(5, 5, 5, 0.3);
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.Message_area>.sub{
+    width:20%;
+    height:50px
+}
+.Message_area>.sub>.send{
+    width: 20%;
+    height:50px;
+    border-radius: 25px;
+    color: rgb(112, 218, 218);
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    position:absolute;
+    bottom: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    cursor:pointer;
+    text-shadow: 0 0 10px #8ef9fb;
+}
+.show{
+    width: 50%;
+    margin: 20px auto;
+    background: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:aliceblue;
+}
+.show > .item{
+    width:90%;
+    margin: 10px auto;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow:  0 10px rgb(0, 0, 0,0.3),0 0 15px rgba(255, 255,255, 0.3) inset;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+.show > .item > .tag{
+    opacity: 0;
+}
+.show > .item > .item_tiltle{
+    width: 100%;
+    height:80px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 900;
+}
+.show > .item > .item_con{
+    width: 100%;
+    height:auto;
+    word-wrap: break-word;
+}
+.show > .item > .item_name{
+   position:absolute;
+   bottom:5px;
+   right:20px;
+}
+.show > .item > .item_time{
+    position:absolute;
+    top: 25px;
+    right: 20px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        video{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="img/小K橘子 - Pixel Time.mp3" type="audio/mp3">
+      </audio>
+      <video autoplay muted loop src="img/Out02.mp4"></video>
+    <div class="logo">
+        <img width="60%" height="60%" src="img/logo.png" alt="">
+    </div>
+    <div class="main_box">
+        <div class="header">
+            <a href="Login.html">登录</a>
+            <a href="home.html">首页</a>
+            <a href="Character.html">学生信息</a>
+            <a href="Video.html">视频资料</a>
+            <a class="active"  href="Contact.html">留言</a>
+            <a href="Self.html">关于我？</a>
+        </div>
+        <form action="Message_are" action="php/add.php" method = "get">
+        <div class="Message_area">
+            <div class="name">
+                <input type="text" placeholder="用户名" name="name">
+            </div>
+            <div class="tiltle">
+                <input type="text" placeholder="主题" name="tiltle">
+            </div>
+            <div class="con">
+                <textarea name="con"></textarea>
+            </div>
+            <div class="sub">
+                <input type="submit" value="发表" class="send">
+            </div>
+        </div>
+    </div>
+</form>
+<div class="show">
+<?php
+     $conn = mysqli_connect("localhost","root","xb114514","demo1");
+    $conn ->query("set names utf8");
+    $sql = "select * from con";
+    $result = $conn->query($sql);
+    $con_num = $result ->num_rows;
+    if($con_num>0){
+        while($row = $result ->fetch_assoc()){
+            $id = $row['id'];
+            $name = $row['name'];
+            $tiltle = $row['tiltle'];
+            $context= $row['context'];
+            $time = $row['time'];
+            echo "
+                <div class=\"item\">
+                    <div class=\"tag\">$id</div>
+                    <div class=\"item_tiltle\">$tiltle</div>
+                    <div class=\"item_con\">$con</div>
+                    <div class=\"item_time\">$time</div>
+                    <div class=\"item_name\">$name</div>
+                </div>
+            ";
+        }
+    }
+    $result ->close();
+    $conn -> close();
+?>
+</div>
+</body>
+</html>
